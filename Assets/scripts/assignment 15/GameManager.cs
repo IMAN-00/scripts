@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
         player.character();
         enemy.PrintEnemyName();
         Debug.Log(player.Heal(20));
+        Debug.Log(enemy.Attack(player,30));
     }
 
    
