@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assignment15;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Character
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Enemy(string name, int health): base(name, health)
+   {
 
-    // Update is called once per frame
-    void Update()
+   }
+   public void Attack(Character target, int amount)
+   {
+    target.Health += amount;
+    if(target.Health < 0)
     {
-        
+        target.Health =0;
     }
+    Debug.Log(name + "attacked"+ amount + "damage.health:" + health);
+   }
+   
 }
