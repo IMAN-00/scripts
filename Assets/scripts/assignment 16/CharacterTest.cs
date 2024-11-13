@@ -5,11 +5,13 @@ using Assignment18;
 
 public class CharacterTest : MonoBehaviour
 {
+    Officer officer;
+    Soldier soldier;
     
     void Start()
     {
-     Officer officer = new Officer("Name", 90, new Position(8,4,0));
-     Soldier soldier = new Soldier();
+     officer = new Officer("Name", 90, new Position(8,4,0));
+     soldier = new Soldier();
 
      Character[]characters = {officer, soldier};
      
