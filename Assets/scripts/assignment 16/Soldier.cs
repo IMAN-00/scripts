@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assignment18;
 
+namespace Assignment18
+{
 public class Soldier : Character
 {
   public void Soldier(string name, int health, Position position): base(name, health,position)
@@ -17,4 +19,5 @@ public class Soldier : Character
       }
 
 
+}
 }

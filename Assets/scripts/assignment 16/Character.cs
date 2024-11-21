@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assignment18;
 
+namespace Assignment18
+{
 
 public class Character
 {
@@ -54,4 +56,5 @@ public class Character
     target.Health -= damage;
     Debug.Log($"{Name}attacked {target.Name}, reduce health by {damage}. target's health: {target.Health}");
  }
+}
 }

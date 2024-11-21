@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assignment18;
 
+namespace Assignment18
+{
 public class CharacterTest : MonoBehaviour
 {
     Officer officer;
@@ -25,4 +27,5 @@ public class CharacterTest : MonoBehaviour
      
 
     }
+}
 }
