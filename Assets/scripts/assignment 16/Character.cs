@@ -12,14 +12,14 @@ public class Character
    private int Health;
    protected Position position;
 
-   public string Name()
+   public string Name
+    { 
+      get;
+      set;
+    }
 
-   {
-        get;
-        set;
-   }
-   
- public int Health(int health)
+
+ public int Health
     {
         get {return health;}
         set { health = Mathf.Clamp(value,0 ,100);}
