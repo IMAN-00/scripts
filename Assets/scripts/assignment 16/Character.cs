@@ -22,7 +22,7 @@ public class Character
  public int Health(int health)
     {
         get {return health;}
-        set { health = (value,0 ,100);}
+        set { health = Mathf.Clamp(value,0 ,100);}
     }
  public Character(string name, int health, Position position)
     {
@@ -48,7 +48,7 @@ public class Character
  }
  public void Attack(int damage, Character target, string attackType)
  {
-    Debug.Log($"Attacktype: attackType");
+    Debug.Log($"Attacktype: {attackType}");
     ApplyDamage(damage, target);
  }
  private void ApplyDamage(int damage, Character target)
