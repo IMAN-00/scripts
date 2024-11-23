@@ -11,7 +11,7 @@ namespace Assignment18
      public float Y;
      public float Z;
     
-  public int Position(float x,float y,float z)
+  public Position(float x,float y,float z)
   {
     this.X = x
     this.Y = y
